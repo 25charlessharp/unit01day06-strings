@@ -5,8 +5,8 @@ public class Abbreviate {
         String text = args[0];
         int textLength = args[0].length();
         if(textLength >= 8){
-            String first = args[0].substring(0,2);
-            String second = args[0].substring(text-2,text);
+            String first = text.substring(0,2);
+            String second = text.substring(textLength-2,textLength);
             String newText = first + "..." + second;
 
             System.out.println(newText);
